@@ -98,9 +98,16 @@ const Footer = () => (
         </div>
       </div>
 
+      {/* Bottom Section */}
       <div className="border-t border-secondary-foreground/10 mt-12 pt-8 text-center text-sm text-secondary-foreground/50">
-        © {new Date().getFullYear()} Naitik Green Enviro Solutions. All rights
-        reserved.
+        <p>
+          © {new Date().getFullYear()} Naitik Green Enviro Solutions. All rights
+          reserved.
+        </p>
+
+        <p className="mt-2 font-bold text-secondary-foreground">
+          Design and Developed by Aditi Dhariwal
+        </p>
       </div>
     </div>
   </footer>
