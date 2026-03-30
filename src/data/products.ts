@@ -3,6 +3,8 @@ import mobileVan from "@/assets/mtv.png";
 import bioDigester from "@/assets/tank.png";
 import portableCabin from "@/assets/product-portable-cabin.jpg";
 import publicToilet from "@/assets/lux-port-toilet.png";
+import puftoilet from "@/assets/puf-toilet.png";
+import securitycabin from "@/assets/sec-cabin.png";
 
 export interface Product {
   id: string;
@@ -83,6 +85,34 @@ export const products: Product[] = [
       "Accessible & ADA-compliant options",
       "Automated cleaning-friendly design",
       "Durable FRP & steel construction",
+    ],
+  },
+  {
+    id: "puftoilet",
+    name: "Panel Build Puf Portable Toilet",
+    image: puftoilet,
+    description:
+      "Durable and insulated PUF panel built portable toilet designed for hygiene, portability, and long-term outdoor use. Ideal for construction sites, events, and remote locations.",
+    features: [
+      "Strong PUF panel insulation",
+      "Lightweight and easy to install",
+      "Weather resistant structure",
+      "Hygienic and easy to clean",
+      "Suitable for portable sanitation needs",
+    ],
+  },
+  {
+    id: "securitycabin",
+    name: "FRP Portable Security Cabin",
+    image: securitycabin,
+    description:
+      "High-quality FRP portable security cabin designed for guard use at industrial sites, offices, construction areas, and residential complexes. Durable, weather-resistant, and easy to relocate.",
+    features: [
+      "Strong and durable FRP construction",
+      "Weather and corrosion resistant",
+      "Easy to install and relocate",
+      "Low maintenance and long lifespan",
+      "Spacious and comfortable for security personnel",
     ],
   },
 ];
