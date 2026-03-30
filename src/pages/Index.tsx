@@ -34,10 +34,26 @@ const stats = [
 ];
 
 const services = [
-  { icon: Shield, title: "Durable Products", desc: "FRP construction built to last in harsh conditions." },
-  { icon: Recycle, title: "Eco-Friendly", desc: "Sustainable solutions reducing environmental impact." },
-  { icon: Truck, title: "Pan-India Delivery", desc: "Timely delivery and installation across India." },
-  { icon: Award, title: "Quality Assured", desc: "Rigorous quality checks on every product." },
+  {
+    icon: Shield,
+    title: "Durable Products",
+    desc: "FRP construction built to last in harsh conditions.",
+  },
+  {
+    icon: Recycle,
+    title: "Eco-Friendly",
+    desc: "Sustainable solutions reducing environmental impact.",
+  },
+  {
+    icon: Truck,
+    title: "Pan-India Delivery",
+    desc: "Timely delivery and installation across India.",
+  },
+  {
+    icon: Award,
+    title: "Quality Assured",
+    desc: "Rigorous quality checks on every product.",
+  },
 ];
 
 const testimonials = [
@@ -78,8 +94,7 @@ const Index = () => (
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="max-w-2xl"
-        >
+          className="max-w-2xl">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground text-xs font-semibold uppercase tracking-wider mb-6 backdrop-blur-sm border border-primary-foreground/20">
             FRP Toilet Manufacturer in India
           </span>
@@ -89,8 +104,8 @@ const Index = () => (
           </h1>
           <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed max-w-xl">
             Naitik Green Enviro Solutions manufactures durable FRP portable
-            toilets, mobile toilet vans, bio digester tanks, and more — delivering
-            sustainable sanitation across India.
+            toilets, mobile toilet vans, bio digester tanks, and more —
+            delivering sustainable sanitation across India.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link to="/products">
@@ -99,7 +114,10 @@ const Index = () => (
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                 Contact Us
               </Button>
             </Link>
@@ -119,10 +137,11 @@ const Index = () => (
             whileInView="visible"
             viewport={{ once: true }}
             custom={i}
-            className="text-center text-primary-foreground"
-          >
+            className="text-center text-primary-foreground">
             <div className="text-3xl md:text-4xl font-extrabold">{s.value}</div>
-            <div className="text-sm mt-1 text-primary-foreground/70">{s.label}</div>
+            <div className="text-sm mt-1 text-primary-foreground/70">
+              {s.label}
+            </div>
           </motion.div>
         ))}
       </div>
@@ -145,13 +164,14 @@ const Index = () => (
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              className="bg-card rounded-xl p-6 shadow-card hover:shadow-card-hover transition-shadow duration-300"
-            >
+              className="bg-card rounded-xl p-6 shadow-card hover:shadow-card-hover transition-shadow duration-300">
               <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4">
                 <s.icon className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {s.desc}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -175,8 +195,7 @@ const Index = () => (
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              className="group bg-card rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
-            >
+              className="group bg-card rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300">
               <div className="overflow-hidden h-56">
                 <img
                   src={p.image}
@@ -188,7 +207,9 @@ const Index = () => (
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-bold text-lg text-foreground mb-2">{p.name}</h3>
+                <h3 className="font-bold text-lg text-foreground mb-2">
+                  {p.name}
+                </h3>
                 <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
                   {p.description}
                 </p>
@@ -219,16 +240,15 @@ const Index = () => (
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+            transition={{ duration: 0.6 }}>
             <SectionHeading
               label="About Us"
               title="Naitik Green Enviro Solutions"
               center={false}
             />
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Established in 2020 in Greater Noida, Uttar Pradesh, Naitik Green
-              Enviro Solutions has quickly become a trusted name in eco-friendly
+              Established in 2020 in Meerut, Uttar Pradesh, Naitik Green Enviro
+              Solutions has quickly become a trusted name in eco-friendly
               sanitation infrastructure. Founded by Gautam Singh, our company
               manufactures and supplies high-quality FRP products to clients
               across India.
@@ -239,7 +259,9 @@ const Index = () => (
                 "Pan-India delivery & installation",
                 "Custom solutions for every requirement",
               ].map((t) => (
-                <div key={t} className="flex items-center gap-3 text-sm text-foreground">
+                <div
+                  key={t}
+                  className="flex items-center gap-3 text-sm text-foreground">
                   <CheckCircle className="h-5 w-5 text-primary shrink-0" />
                   {t}
                 </div>
@@ -256,8 +278,7 @@ const Index = () => (
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-2 gap-4"
-          >
+            className="grid grid-cols-2 gap-4">
             {[
               { icon: Users, label: "10–50 Employees" },
               { icon: Target, label: "500+ Projects" },
@@ -266,10 +287,11 @@ const Index = () => (
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-card rounded-xl p-6 text-center shadow-card"
-              >
+                className="bg-card rounded-xl p-6 text-center shadow-card">
                 <item.icon className="h-8 w-8 mx-auto text-primary mb-3" />
-                <div className="text-sm font-medium text-foreground">{item.label}</div>
+                <div className="text-sm font-medium text-foreground">
+                  {item.label}
+                </div>
               </div>
             ))}
           </motion.div>
@@ -294,8 +316,7 @@ const Index = () => (
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              className="bg-card rounded-xl p-8 shadow-card"
-            >
+              className="bg-card rounded-xl p-8 shadow-card">
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: 5 }).map((_, j) => (
                   <Star
@@ -310,7 +331,9 @@ const Index = () => (
                 "{t.text}"
               </p>
               <div>
-                <div className="font-semibold text-foreground text-sm">{t.name}</div>
+                <div className="font-semibold text-foreground text-sm">
+                  {t.name}
+                </div>
                 <div className="text-xs text-muted-foreground">{t.role}</div>
               </div>
             </motion.div>
@@ -326,14 +349,13 @@ const Index = () => (
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
+          transition={{ duration: 0.5 }}>
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
             Ready to Get Started?
           </h2>
           <p className="text-primary-foreground/70 max-w-xl mx-auto mb-8">
-            Get a free quote for your sanitation requirements. We deliver
-            across India with installation support.
+            Get a free quote for your sanitation requirements. We deliver across
+            India with installation support.
           </p>
           <Link to="/contact">
             <Button size="lg" className="gap-2">

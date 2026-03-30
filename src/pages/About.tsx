@@ -12,11 +12,31 @@ const fadeUp = {
 };
 
 const timeline = [
-  { year: "2020", title: "Company Founded", desc: "Naitik Green Enviro Solutions started operations in Greater Noida." },
-  { year: "2021", title: "First Major Project", desc: "Delivered 50+ FRP toilets for a government sanitation initiative." },
-  { year: "2022", title: "Expanded Product Line", desc: "Added mobile toilet vans and bio digester tanks to our offerings." },
-  { year: "2023", title: "Pan-India Presence", desc: "Expanded delivery and installation services to 15+ states." },
-  { year: "2024", title: "500+ Projects Milestone", desc: "Crossed 500 successful project deliveries across India." },
+  {
+    year: "2020",
+    title: "Company Founded",
+    desc: "Naitik Green Enviro Solutions started operations in MEERUT.",
+  },
+  {
+    year: "2021",
+    title: "First Major Project",
+    desc: "Delivered 50+ FRP toilets for a government sanitation initiative.",
+  },
+  {
+    year: "2022",
+    title: "Expanded Product Line",
+    desc: "Added mobile toilet vans and bio digester tanks to our offerings.",
+  },
+  {
+    year: "2023",
+    title: "Pan-India Presence",
+    desc: "Expanded delivery and installation services to 15+ states.",
+  },
+  {
+    year: "2024",
+    title: "500+ Projects Milestone",
+    desc: "Crossed 500 successful project deliveries across India.",
+  },
 ];
 
 const About = () => (
@@ -28,8 +48,7 @@ const About = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-2xl"
-        >
+          className="max-w-2xl">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground text-xs font-semibold uppercase tracking-wider mb-4">
             About Us
           </span>
@@ -37,9 +56,9 @@ const About = () => (
             Building a <span className="text-primary">Greener</span> India
           </h1>
           <p className="mt-6 text-primary-foreground/70 leading-relaxed">
-            Since 2020, Naitik Green Enviro Solutions has been at the forefront of
-            eco-friendly sanitation infrastructure, delivering durable FRP products
-            that protect both people and the planet.
+            Since 2020, Naitik Green Enviro Solutions has been at the forefront
+            of eco-friendly sanitation infrastructure, delivering durable FRP
+            products that protect both people and the planet.
           </p>
         </motion.div>
       </div>
@@ -67,12 +86,13 @@ const About = () => (
             whileInView="visible"
             viewport={{ once: true }}
             custom={i}
-            className="bg-card rounded-xl p-8 shadow-card"
-          >
+            className="bg-card rounded-xl p-8 shadow-card">
             <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4">
               <item.icon className="h-6 w-6 text-primary" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-3">{item.title}</h3>
+            <h3 className="text-xl font-bold text-foreground mb-3">
+              {item.title}
+            </h3>
             <p className="text-muted-foreground leading-relaxed">{item.text}</p>
           </motion.div>
         ))}
@@ -83,26 +103,24 @@ const About = () => (
     <section className="py-20 bg-muted/30">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
-          <SectionHeading
-            label="Leadership"
-            title="Meet Our Founder"
-          />
+          <SectionHeading label="Leadership" title="Meet Our Founder" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-card rounded-xl p-8 shadow-card"
-          >
+            className="bg-card rounded-xl p-8 shadow-card">
             <div className="w-20 h-20 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
               <Users className="h-10 w-10 text-primary" />
             </div>
             <h3 className="text-2xl font-bold text-foreground">Gautam Singh</h3>
-            <p className="text-primary font-medium text-sm mb-4">Founder & Director</p>
+            <p className="text-primary font-medium text-sm mb-4">
+              Founder & Director
+            </p>
             <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto">
-              With a passion for sustainable development and years of experience in
-              the infrastructure sector, Gautam Singh founded Naitik Green Enviro
-              Solutions to address India's growing sanitation needs. His vision
-              drives the company's commitment to quality, innovation, and
+              With a passion for sustainable development and years of experience
+              in the infrastructure sector, Gautam Singh founded Naitik Green
+              Enviro Solutions to address India's growing sanitation needs. His
+              vision drives the company's commitment to quality, innovation, and
               environmental stewardship.
             </p>
           </motion.div>
@@ -126,8 +144,7 @@ const About = () => (
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              className="flex gap-6 mb-8 last:mb-0"
-            >
+              className="flex gap-6 mb-8 last:mb-0">
               <div className="flex flex-col items-center">
                 <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold shrink-0">
                   {t.year.slice(2)}
@@ -137,7 +154,9 @@ const About = () => (
                 )}
               </div>
               <div className="pb-8">
-                <div className="text-sm text-primary font-semibold mb-1">{t.year}</div>
+                <div className="text-sm text-primary font-semibold mb-1">
+                  {t.year}
+                </div>
                 <h4 className="font-bold text-foreground mb-1">{t.title}</h4>
                 <p className="text-sm text-muted-foreground">{t.desc}</p>
               </div>
