@@ -20,10 +20,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b">
       <nav className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2 font-bold text-xl">
-          <Leaf className="h-7 w-7 text-primary" />
-          <span className="text-foreground">
-            Naitik <span className="text-primary">Green</span>
-          </span>
+          <img src={logo} alt="Naitik Green Enviro Solutions" className="h-10 md:h-12 w-auto" />
         </Link>
 
         {/* Desktop */}
