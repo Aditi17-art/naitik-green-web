@@ -104,9 +104,9 @@ const Contact = () => {
             >
               <div className="space-y-5">
                 {[
-                  { icon: MapPin, label: "Address", value: "Greater Noida, Uttar Pradesh, India" },
-                  { icon: Phone, label: "Phone", value: "+91 99999 99999", href: "tel:+919999999999" },
-                  { icon: Mail, label: "Email", value: "info@naitikgreen.com", href: "mailto:info@naitikgreen.com" },
+                  { icon: MapPin, label: "Address", value: "House No: 108, near CNG Pump, Chopla, Bhuni Meerut – 250344" },
+                  { icon: Phone, label: "Phone", value: "+91 81716 30988, +91 92059 19411", href: "tel:+918171630988" },
+                  { icon: Mail, label: "Email", value: "naitikenviroind1619@gmail.com", href: "mailto:naitikenviroind1619@gmail.com" },
                   { icon: Clock, label: "Working Hours", value: "Mon–Sat: 9:00 AM – 6:00 PM" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
