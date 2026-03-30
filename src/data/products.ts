@@ -1,8 +1,8 @@
-import portableToilet from "@/assets/product-portable-toilet.jpg";
-import mobileVan from "@/assets/product-mobile-van.jpg";
-import bioDigester from "@/assets/product-bio-digester.jpg";
+import portableToilet from "@/assets/port-toilet.jpg";
+import mobileVan from "@/assets/mtv.png";
+import bioDigester from "@/assets/tank.png";
 import portableCabin from "@/assets/product-portable-cabin.jpg";
-import publicToilet from "@/assets/product-public-toilet.jpg";
+import publicToilet from "@/assets/lux-port-toilet.png";
 
 export interface Product {
   id: string;
