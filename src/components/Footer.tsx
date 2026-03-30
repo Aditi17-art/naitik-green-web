@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Leaf, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-secondary text-secondary-foreground">
@@ -7,9 +8,8 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <Link to="/" className="flex items-center gap-2 font-bold text-xl mb-4">
-            <Leaf className="h-6 w-6 text-primary" />
-            <span>Naitik Green</span>
+          <Link to="/" className="mb-4 inline-block">
+            <img src={logo} alt="Naitik Green Enviro Solutions" className="h-12 w-auto" />
           </Link>
           <p className="text-secondary-foreground/70 text-sm leading-relaxed">
             Leading manufacturer & supplier of eco-friendly FRP sanitation products across India since 2020.
