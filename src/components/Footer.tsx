@@ -105,7 +105,7 @@ const Footer = () => (
           reserved.
         </p>
 
-        <p className="mt-2 font-bold text-secondary-foreground">
+        <p className="mt-4 font-bold text-secondary-foreground">
           Design and Developed by Aditi Dhariwal
         </p>
       </div>
